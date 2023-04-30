@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="CSGO RushB中文网">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>CSGO本地模式替换探员皮肤控制台指令【附模型列表】-CSGO RushB中文网</title>
+<link rel='dns-prefetch' href='https://apps.bdimg.com/' />
+<link rel='dns-prefetch' href='www_rushb_default.html' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='stylesheet' id='_bootstrap-css'  href='wp-content/themes/dux/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_fontawesome-css'  href='wp-content/themes/dux/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_main-css'  href='wp-content/themes/dux/css/main.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js?ver=5.1'></script>
+<link rel='https://api.w.org/' href='wp-json/wp-json.json' />
+<link rel='prev' title='经典攻势（CSCO）2021年3月开发日志' href='csco-development-log-2021-3_2.html' />
+<link rel='next' title='CSGO 2021年4月14日更新日志「本地化」' href='csgo-update-2021-4-14_2.html' />
+<link rel="canonical" href="csgo-agent-skin-modelindex_2.html" />
+<link rel='shortlink' href='https://www.rushb.net/?p=5139' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed_601.json" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed_605.xml" />
+<meta name="keywords" content="csgo, 人物, 任意, 地图, 指令, 探员, 控制台, 替换, 模型, 皮肤, 角色, 阵营, CSGO新闻资讯">
+<meta name="description" content="本文将介绍在单机模式（本地模式）下，玩家可以在任意地图将自己（或队友/BOT）的角色模型替换成各种探员皮肤，包括各个阵营人物。注意不支持无线电语音，具体方法请见下方，包括各个人物的模型列表。  单机模式（机器人练习赛）下进入任意地图，然后控制台输入：sv_cheats 1，如果不想让BOT乱动的话，输入：bot_stop 1  首先简单说下替换探员皮肤的简单流程：①生成探员皮肤模型，②查找模型编号">
+<style>a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span{color: #555555;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #555555;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #555555;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #555555;}.excerpt .cat i{border-left-color:#555555;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #555555;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#555555;}}.post-actions .action.action-like{background-color: #555555;}.catleader h1{border-left-color: #555555;}pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;
+}
+.article-content a:hover span{color: #45B6F7;}</style><link rel="shortcut icon" href="favicon.ico">
+<!--[if lt IE 9]><script src="https://www.rushb.net/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="post-template-default single single-post postid-5139 single-format-standard m-excerpt-cat site-layout-2 text-justify-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="www_rushb_default.html" title="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网"><img src="wp-content/uploads/2018/10/RUSHBlogo.png" alt="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网">CSGO RushB中文网</a></div>		<div class="brand">RushB中文网<br>CSGO / 反恐精英：全球攻势</div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-15"><a title="CSGO新闻资讯" href="csgo-news/csgo-news.htm">新闻资讯</a></li>
+<li id="menu-item-3886" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3886"><a title="CSGO教程攻略" href="csgo-course/csgo-course.htm">教程攻略</a>
+<ul class="sub-menu">
+	<li id="menu-item-4542" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4542"><a title="CSGO指令命令" href="csgo-course/csgo-console-commands/csgo-console-commands.htm">CSGO指令命令</a></li>
+</ul>
+</li>
+<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a title="CSGO比赛信息" href="csgo-matchs/csgo-matchs.htm">比赛信息</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a title="CSGO更新日志" href="csgo-updates-log/csgo-updates-log.htm">更新日志</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52"><a title="CSGO资源壁纸" href="csgo-resources-wallpapers/csgo-resources-wallpapers.htm">资源壁纸</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55"><a title="CSGO创意工坊" href="csgo-workshop/csgo-workshop.htm">创意工坊</a></li>
+<li id="menu-item-433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-433"><a title="CSCO经典攻势" href="csco/csco.htm">经典攻势</a></li>
+<li id="menu-item-5883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5883"><a title="CSGO职业选手外设、设置指令" href="pro-player-settings/pro-player-settings.htm">选手设置</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+				<div class="topbar">
+			<ul class="site-nav topmenu">
+											</ul>
+					</div>
+						<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="www_rushb_default.html" ><input class="search-input" name="s" type="text" placeholder="输入关键字" value=""><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>	<div class="breadcrumbs">
+		<div class="container">当前位置：<a href="www_rushb_default.html">CSGO RushB中文网</a> <small>></small> <a href="csgo-news/csgo-news.htm">CSGO新闻资讯</a> <small>></small> 正文</div>
+	</div>
+<section class="container">
+	<div class="content-wrap">
+	<div class="content">
+				<header class="article-header">
+			<h1 class="article-title"><a href="csgo-agent-skin-modelindex_2.html">CSGO本地模式替换探员皮肤控制台指令【附模型列表】</a></h1>
+			<div class="article-meta">
+				<span class="item">2021-04-13</span>
+												<span class="item">分类：<a href="csgo-news/csgo-news.htm" rel="category tag">CSGO新闻资讯</a></span>
+				<span class="item post-views">阅读(17326)</span>				<span class="item">评论(0)</span>
+				<span class="item"></span>
+			</div>
+		</header>
+				<article class="article-content">
+			
+			
+			<div style="width:100%;">
+			    <a target="_blank" onclick="_hmt.push(['_trackEvent', 'd2topbox', 'click', 'post'])" href=" https://www.rushb.net/go/d2topbox" rel="nofollow"><img src="wp-content/uploads/2022/06/new820150.png"></a>
+            </div>
+			
+			
+						<p>本文将介绍在单机模式（本地模式）下，玩家可以在任意地图将自己（或队友/BOT）的角色模型替换成各种探员皮肤，包括各个阵营人物。注意不支持无线电语音，具体方法请见下方，包括各个人物的模型列表。</p>
+<p>单机模式（机器人练习赛）下进入任意地图，然后控制台输入：<code>sv_cheats 1</code>，如果不想让BOT乱动的话，输入：<code>bot_stop 1</code></p>
+<p>首先简单说下替换探员皮肤的简单流程：①生成探员皮肤模型，②查找模型编号，③将自己替换成指定模型。</p>
+<p>不过要注意，为了方便查找编号，我们最好排除地图上已有的探员（包括自己装备的探员皮肤）。</p>
+<p>如果只是想体验探员地图无所谓的话，可以使用本站制作的<a href="csgo-map-agent-lab_2.html" target="_blank" rel="noopener">探员体验地图Agent Lab</a></p>
+<p>视频教程：</p>
+<p><iframe src="https://player.bilibili.com/player.html?bvid=BV1Vh411U7ZB&amp;page=1" width="820" height="450" frameborder="no" scrolling="no" allowfullscreen="allowfullscreen"> </iframe></p>
+<p>教程文字版：</p>
+<h2>生成探员模型</h2>
+<p>在地图上生成需要的探员模型，<span style="color: #ff0000;"><strong>在本文下方有所有的探员模型列表</strong></span>，按需选择复制即可，这里以“残酷的达里尔爵士（迈阿密）| 专业人士”为例，他的模型路径名为\player\custom_player\legacy\tm_professional_varf.mdl;</p>
+<p>配合模型生成指令prop_dynamic_create，我们将以下指令输入到控制台：<code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf.mdl;</code></p>
+<p>然后便会在准星瞄准处生成达里尔爵士的模型。</p>
+<p><img class="alignnone size-medium wp-image-5142" src="wp-content/uploads/2021/04/modelindex-820x382.png" alt="" width="820" height="382" srcset="https://www.rushb.net/wp-content/uploads/2021/04/modelindex.png 820w, https://www.rushb.net/wp-content/uploads/2021/04/modelindex-768x358.png 768w" sizes="(max-width: 820px) 100vw, 820px" /></p>
+<h2>查找编号</h2>
+<p>接下来，我们需要达里尔爵士模型在本地图的生成编号，控制台输入：<code>sv_precacheinfo</code></p>
+<p>然后控制台会显示该地图目前所有模型编号，如图：</p>
+<p><img class="alignnone size-medium wp-image-5141" src="wp-content/uploads/2021/04/modelindex1.png" alt="" width="750" height="503" /></p>
+<p>可以看到这里达里尔爵士的编号为784，接下来&#8230;</p>
+<h2>替换自己/BOT/队友的探员皮肤</h2>
+<p>知道编号后，我们就可以将自己的角色替换成达里尔爵士，亦或者将队友或者BOT也替换成达里尔爵士。</p>
+<p>替换自己的人物角色的话，控制台输入：</p>
+<p><code>ent_fire !self addoutput "modelindex 编号"</code></p>
+<p>以达里尔爵士角色为例，控制台输入ent_fire !self addoutput &#8220;modelindex 784&#8243;即可。</p>
+<p>替换队友或BOT的话，准星对准他们，控制台输入：</p>
+<p><code>ent_fire !picker addoutput "modelindex 编号"</code></p>
+<p><img class="alignnone size-medium wp-image-5140" src="wp-content/uploads/2021/04/modelindex2-820x612.png" alt="" width="820" height="612" srcset="https://www.rushb.net/wp-content/uploads/2021/04/modelindex2.png 820w, https://www.rushb.net/wp-content/uploads/2021/04/modelindex2-768x573.png 768w" sizes="(max-width: 820px) 100vw, 820px" /></p>
+<p>&nbsp;</p>
+<h2>探员模型列表</h2>
+<p>注意，不要用地图已有的人物（包括自己装备的探员皮肤）。</p>
+<p><strong>FBI</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>亚裔哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi.mdl</code></li>
+<li>墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_varianta.mdl</code></li>
+<li>黑哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantc.mdl</code></li>
+<li>蒙面哥（黄包黑裤）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantd.mdl</code></li>
+<li>蒙面哥（黑包蓝裤）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantd.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>Ava特工</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantb.mdl</code></li>
+<li>特种兵</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantf.mdl</code></li>
+<li>Markus Delrow</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_variantg.mdl</code></li>
+<li>迈克·赛弗斯</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_fbi_varianth.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>GIGN默认人物模型</strong></p>
+<ul>
+<li>蓝、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gign.mdl</code></li>
+<li>黑、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gign_varianta.mdl</code></li>
+<li>蓝、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gign_variantb.mdl</code></li>
+<li>蓝、面罩打开</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gign_variantc.mdl</code></li>
+<li>黑、面罩打开</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gign_variantd.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>GSG9</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>灰、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gsg9.mdl</code></li>
+<li>黑、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gsg9_varianta.mdl</code></li>
+<li>蓝、面罩放下</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gsg9_variantb.mdl</code></li>
+<li>蓝、面罩打开</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gsg9_variantc.mdl</code></li>
+<li>灰、面罩打开</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_gsg9_variantd.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>第三特种兵连</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantk.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>IDF默认人物模型</strong></p>
+<ul>
+<li>帽子皱眉哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf.mdl</code></li>
+<li>头盔皱眉哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf_variantb.mdl</code></li>
+<li>帽子怒视哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf_variantc.mdl</code></li>
+<li>头盔怒视哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf_variantd.mdl</code></li>
+<li>貌似黑眼圈哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf_variante.mdl</code></li>
+<li>头盔黑眼圈哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_idf_variantf.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>SAS</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>五个人物一样，所以只放一个</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_sas.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>B Squadron指挥官</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_sas_variantf.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>ST6</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>黑色墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6.mdl</code></li>
+<li>黄色墨镜哥（夜视仪）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_varianta.mdl</code></li>
+<li>浅色墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantb.mdl</code></li>
+<li>没有墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantc.mdl</code></li>
+<li>黑色墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantd.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>海豹部队第六分队士兵</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variante.mdl</code></li>
+<li>铅弹</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantg.mdl</code></li>
+<li>陆军少尉长官里克索尔</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_varianti.mdl</code></li>
+<li>“蓝莓” 铅弹</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantj.mdl</code></li>
+<li>“两次”麦考伊（黄）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantl.mdl</code></li>
+<li>“两次”麦考伊（蓝）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_st6_variantm.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>SWAT</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>皱眉哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat.mdl</code></li>
+<li>胡茬哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_varianta.mdl</code></li>
+<li>黑哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantb.mdl</code></li>
+<li>红唇哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantc.mdl</code></li>
+<li>红胡子哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantd.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>指挥官 梅 “极寒” 贾米森</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variante.mdl</code></li>
+<li>第一中尉法洛</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantf.mdl</code></li>
+<li>约翰 “范·海伦” 卡斯克</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantg.mdl</code></li>
+<li>生物防害专家</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_varianth.mdl</code></li>
+<li>军士长炸弹森</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_varianti.mdl</code></li>
+<li>化学防害专家</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_swat_variantj.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>主义者默认人物模型</strong></p>
+<ul>
+<li>蓝面罩、红背包</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_anarchist.mdl</code></li>
+<li>美国面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_anarchist_varianta.mdl</code></li>
+<li>红面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_anarchist_variantb.mdl</code></li>
+<li>蓝面罩、蓝背包</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_anarchist_variantc.mdl</code></li>
+<li>骷髅面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_anarchist_variantd.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>巴尔干</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>头盔</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_varianta.mdl</code></li>
+<li>编织帽（紫）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantb.mdl</code></li>
+<li>鸭舌帽</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantc.mdl</code></li>
+<li>编织帽（棕）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantd.mdl</code></li>
+<li>编织帽（蓝）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variante.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>德拉戈米尔（棕）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantf.mdl</code></li>
+<li>准备就绪的列赞</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantg.mdl</code></li>
+<li>“医生”罗曼诺夫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_varianth.mdl</code></li>
+<li>马克西姆斯</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_varianti.mdl</code></li>
+<li>黑狼</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantj.mdl</code></li>
+<li>红衫列赞</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantk.mdl</code></li>
+<li>德拉戈米尔（红）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_balkan_variantl.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>精锐分子</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>黑哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_varianta.mdl</code></li>
+<li>墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variantb.mdl</code></li>
+<li>光头哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variantc.mdl</code></li>
+<li>头巾哥（白）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variantd.mdl</code></li>
+<li>头巾哥（棕）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variante.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>精英Muhlik先生</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variantf.mdl</code></li>
+<li>地面叛军 | 精锐分子</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_variantg.mdl</code></li>
+<li>Osiris</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_varianth.mdl</code></li>
+<li>Shahmat教授</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_leet_varianti.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>凤凰战士</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>粉格子衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix.mdl</code></li>
+<li>白衬衣</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_varianta.mdl</code></li>
+<li>灰衬衣</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_variantb.mdl</code></li>
+<li>黄格子衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_variantc.mdl</code></li>
+<li>红格子衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_variantd.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>执行者</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_variantf.mdl</code></li>
+<li>弹弓</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_variantg.mdl</code></li>
+<li>枪手</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_varianth.mdl</code></li>
+<li>街头士兵</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_varianti.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>海盗默认人物模型</strong></p>
+<ul>
+<li>粉面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_pirate.mdl</code></li>
+<li>红面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_pirate_varianta.mdl</code></li>
+<li>墨镜哥、粉头巾</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_pirate_variantb.mdl</code></li>
+<li>蓝格子面罩</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_pirate_variantc.mdl</code></li>
+<li>墨镜哥、橘头巾</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_pirate_variantd.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>专业人士</strong></p>
+<p>默认人物模型</p>
+<ul>
+<li>灰衬衣、黑背心</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional.mdl</code></li>
+<li>白衬衣、黑背心</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_var1.mdl</code></li>
+<li>灰背心</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_var2.mdl</code></li>
+<li>白背心</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_var3.mdl</code></li>
+<li>黑哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_var4.mdl</code></li>
+</ul>
+<p>皮肤模型</p>
+<ul>
+<li>残酷的达里尔爵士（迈阿密）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf.mdl</code></li>
+<li>残酷的达里尔爵士（沉默）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf1.mdl</code></li>
+<li>残酷的达里尔爵士（头盖骨）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf2.mdl</code></li>
+<li>残酷的达里尔爵士（皇家）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf3.mdl</code></li>
+<li>残酷的达里尔爵士（聒噪）</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varf4.mdl</code></li>
+<li>贼波兹曼</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varg.mdl</code></li>
+<li>小凯夫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varh.mdl</code></li>
+<li>老K</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_vari.mdl</code></li>
+<li>出逃的萨莉</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_professional_varj.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>炼狱小镇默认人物模型</strong></p>
+<ul>
+<li>蓝衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_separatist.mdl</code></li>
+<li>黑衫灰裤</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_separatist_varianta.mdl</code></li>
+<li>灰衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_separatist_variantb.mdl</code></li>
+<li>黑衫绿裤</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_separatist_variantc.mdl</code></li>
+<li>绿衫</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_separatist_variantd.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>头号特训默认人物模型</strong></p>
+<ul>
+<li>黑哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_jumpsuit_varianta.mdl</code></li>
+<li>墨镜哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_jumpsuit_variantb.mdl</code></li>
+<li>光头哥</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_jumpsuit_variantc.mdl</code></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>重甲模型</strong></p>
+<ul>
+<li>CT</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\ctm_heavy.mdl</code></li>
+<li>T</li>
+<li><code>prop_dynamic_create \player\custom_player\legacy\tm_phoenix_heavy.mdl</code></li>
+</ul>
+		</article>
+								            <div class="post-actions">
+            	<a href="javascript:;" etap="like" class="post-like action action-like" data-pid="5139"><i class="fa fa-thumbs-o-up"></i>赞(<span>29</span>)</a>            	            	            </div>
+        		<div class="post-copyright">未经允许不得转载：<a href="www_rushb_default.html">CSGO RushB中文网</a> &raquo; <a href="csgo-agent-skin-modelindex_2.html">CSGO本地模式替换探员皮肤控制台指令【附模型列表】</a></div>		
+					<div class="action-share"></div>
+		
+		<div class="article-tags">标签：<a href="tag/csgo/csgo.htm" rel="tag">csgo</a><a href="tag/����.htm" rel="tag">人物</a><a href="tag/����.htm" rel="tag">任意</a><a href="tag/��ͼ/��ͼ.htm" rel="tag">地图</a><a href="tag/ָ��/ָ��.htm" rel="tag">指令</a><a href="tag/̽Ա.htm" rel="tag">探员</a><a href="tag/����̨/����̨.htm" rel="tag">控制台</a><a href="tag/�滻.htm" rel="tag">替换</a><a href="tag/ģ��.htm" rel="tag">模型</a><a href="tag/Ƥ��/Ƥ��.htm" rel="tag">皮肤</a><a href="tag/��ɫ.htm" rel="tag">角色</a><a href="tag/��Ӫ.htm" rel="tag">阵营</a></div>
+		
+		
+		            <nav class="article-nav">
+                <span class="article-nav-prev">上一篇<br><a href="csco-development-log-2021-3_2.html" rel="prev">经典攻势（CSCO）2021年3月开发日志</a></span>
+                <span class="article-nav-next">下一篇<br><a href="csgo-update-2021-4-14_2.html" rel="next">CSGO 2021年4月14日更新日志「本地化」</a></span>
+            </nav>
+        
+				<div class="relates"><div class="title"><h3>推荐</h3></div><ul><li><a href="csgo-workshop-map-mirage-plus_2.html">创意工坊地图推荐：荒漠迷城+</a></li><li><a href="csgo-case-operationoperation-release-order-time_2.html">CSGO已推出的武器箱、大行动更新时间列表【新增印花胶囊】</a></li><li><a href="csgo-removed-map-chlorine_2.html">被移除的CSGO地图：科洛林</a></li><li><a href="csgo-workshop-map-palais_2.html">CSGO搭档地图推荐：Palais</a></li><li><a href="csgo-update-2022-12-17_2.html">CSGO 2022年12月17日更新日志「多张地图改进」</a></li></ul></div>					</div>
+	</div>
+	<div class="sidebar">
+<div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div>
+	<a target="_blank" onclick="_hmt.push(['_trackEvent', 'hash', 'click', 'pc_all_right2'])" href="	https://www.rushb.net/go/hash" rel="nofollow"><img src="wp-content/uploads/2021/07/88hash360.png" alt="88s"></a>
+</div></div></div><div class="widget widget_ui_posts"><h3>置顶推荐</h3><ul><li><a target="_blank" href="csgo-map-agent-lab_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2021/02/agentlab2021-1-220x150.png" alt="CSGO 探员、刀子、音乐盒 体验地图：Agent Lab-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO 探员、刀子、音乐盒 体验地图：Agent Lab</span><span class="muted">2021-02-20</span></a></li>
+<li><a target="_blank" href="csgo-all-give-commands_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2020/03/csgogive-220x150.png" alt="CSGO武器、装备Give获取控制台指令【2022版】-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO武器、装备Give获取控制台指令【2022版】</span><span class="muted">2020-03-21</span></a></li>
+<li><a target="_blank" href="csgo-name-change-font_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2019/03/namefont-220x150.png" alt="CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法</span><span class="muted">2019-09-14</span></a></li>
+</ul></div><div class="widget widget_ui_posts"><h3>热门文章</h3><ul class="nopic"><li><a target="_blank" href="csgo-major-rio-2022-viewer-pass-coin_2.html"><span class="text">IEM里约2022观众通行证介绍及问答（硬币升级、战队预测、纪念包兑换）</span><span class="muted">2022-10-22</span></a></li>
+<li><a target="_blank" href="csgo-map-de-port_2.html"><span class="text">CSGO地图推荐：De_Port</span><span class="muted">2020-01-02</span></a></li>
+<li><a target="_blank" href="csgo-mp-random-spawn-command_2.html"><span class="text">CSGO休闲/竞技随机位置出生点指令</span><span class="muted">2020-08-29</span></a></li>
+<li><a target="_blank" href="https://www.rushb.net/csgo-riptide-week-12_2.html"><span class="text">军备5连杀，CSGO激流大行动第十二周任务攻略提前看</span><span class="muted">2021-12-01</span></a></li>
+<li><a target="_blank" href="https://www.rushb.net/attacker-pro-setting_2.html"><span class="text">Attacker鼠标键盘外设、视频设置、准心CFG参数</span><span class="muted">2019-07-11</span></a></li>
+</ul></div></div></section>
+
+
+<footer class="footer">
+	<div class="container">
+							<div class="fcode">
+				<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/connect_2.htm">
+<b>网站合作 联系本站</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/bilibili">
+<b>哔哩哔哩</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/qq">
+<b>QQ群 97574671</b>
+</a>
+			</div>
+				<p>&copy; 2023 <a href="https://www.rushb.net/www_rushb_default.html">CSGO RushB中文网</a> &nbsp; <a href="sitemap.xml">网站地图</a>
+</p>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f66fd8235142d9ab480f67b9d46e106f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	</div>
+</footer>
+
+
+
+<script>
+window.jsui={
+	www: 'https://www.rushb.net',
+	uri: 'https://www.rushb.net/wp-content/themes/dux',
+	ver: '5.1',
+	roll: ["1","2"],
+	ajaxpager: '0',
+	url_rp: 'https://www.rushb.net/connect'
+};
+</script>
+<script type='text/javascript' src='https://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js?ver=5.1'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-content/themes/dux/js/loader.js'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

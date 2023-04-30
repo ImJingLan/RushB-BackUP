@@ -1,0 +1,606 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="CSGO RushB中文网">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>CSGO按键绑定控制台指令教程【bind与BindToggle】-CSGO RushB中文网</title>
+<link rel='dns-prefetch' href='https://apps.bdimg.com/' />
+<link rel='dns-prefetch' href='www_rushb_default.html' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='stylesheet' id='_bootstrap-css'  href='wp-content/themes/dux/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_fontawesome-css'  href='wp-content/themes/dux/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_main-css'  href='wp-content/themes/dux/css/main.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js?ver=5.1'></script>
+<link rel='https://api.w.org/' href='wp-json/wp-json.json' />
+<link rel='prev' title='CSGO地图推荐：Dust II Night（炙热沙城2 夜晚版）' href='csgo-map-dust-ii-night_2.html' />
+<link rel='next' title='【CS:GO Stats】自动收集、分析官匹DEMO，随时查看战绩数据' href='csgo-stats-auto-demo_2.html' />
+<link rel="canonical" href="csgo-bind-bindtoggle_2.html" />
+<link rel='shortlink' href='https://www.rushb.net/?p=2684' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed_671.json" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed_670.xml" />
+<meta name="keywords" content="bind, BindToggle, 代码, 关闭, 同个, 命令, 多个, 左右手, 开关, 开启, 指令, 按键, 控制台, 绑定, 解绑, 键盘, CSGO指令命令, CSGO教程攻略">
+<meta name="description" content="本文将教新人玩家在CSGO中如何使用按键绑定控制台指令命令等相关内容，具体教程如下：  CSGO提供了两个按键绑定指令，分别是bind与BindToggle，用于不同的控制台指令。 bind 格式： bind x '指令' bind指令用于将控制台指令绑定到指定按键上，一个按键可绑定多条指令（英文分号隔开），按下即生效，比如用于设置一键购买武器、装备、一键清除血迹等，例如：  按下R键换弹和清除血">
+<style>a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span{color: #555555;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #555555;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #555555;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #555555;}.excerpt .cat i{border-left-color:#555555;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #555555;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#555555;}}.post-actions .action.action-like{background-color: #555555;}.catleader h1{border-left-color: #555555;}pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;
+}
+.article-content a:hover span{color: #45B6F7;}</style><link rel="shortcut icon" href="favicon.ico">
+<!--[if lt IE 9]><script src="https://www.rushb.net/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="post-template-default single single-post postid-2684 single-format-standard m-excerpt-cat site-layout-2 text-justify-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="www_rushb_default.html" title="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网"><img src="wp-content/uploads/2018/10/RUSHBlogo.png" alt="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网">CSGO RushB中文网</a></div>		<div class="brand">RushB中文网<br>CSGO / 反恐精英：全球攻势</div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a title="CSGO新闻资讯" href="csgo-news/csgo-news.htm">新闻资讯</a></li>
+<li id="menu-item-3886" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-3886"><a title="CSGO教程攻略" href="csgo-course/csgo-course.htm">教程攻略</a>
+<ul class="sub-menu">
+	<li id="menu-item-4542" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4542"><a title="CSGO指令命令" href="csgo-course/csgo-console-commands/csgo-console-commands.htm">CSGO指令命令</a></li>
+</ul>
+</li>
+<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a title="CSGO比赛信息" href="csgo-matchs/csgo-matchs.htm">比赛信息</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a title="CSGO更新日志" href="csgo-updates-log/csgo-updates-log.htm">更新日志</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52"><a title="CSGO资源壁纸" href="csgo-resources-wallpapers/csgo-resources-wallpapers.htm">资源壁纸</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55"><a title="CSGO创意工坊" href="csgo-workshop/csgo-workshop.htm">创意工坊</a></li>
+<li id="menu-item-433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-433"><a title="CSCO经典攻势" href="csco/csco.htm">经典攻势</a></li>
+<li id="menu-item-5883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5883"><a title="CSGO职业选手外设、设置指令" href="pro-player-settings/pro-player-settings.htm">选手设置</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+				<div class="topbar">
+			<ul class="site-nav topmenu">
+											</ul>
+					</div>
+						<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="www_rushb_default.html" ><input class="search-input" name="s" type="text" placeholder="输入关键字" value=""><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>	<div class="breadcrumbs">
+		<div class="container">当前位置：<a href="www_rushb_default.html">CSGO RushB中文网</a> <small>></small> <a href="csgo-course/csgo-course.htm">CSGO教程攻略</a> <small>></small> <a href="csgo-course/csgo-console-commands/csgo-console-commands.htm">CSGO指令命令</a> <small>></small> 正文</div>
+	</div>
+<section class="container">
+	<div class="content-wrap">
+	<div class="content">
+				<header class="article-header">
+			<h1 class="article-title"><a href="csgo-bind-bindtoggle_2.html">CSGO按键绑定控制台指令教程【bind与BindToggle】</a></h1>
+			<div class="article-meta">
+				<span class="item">2019-10-06</span>
+												<span class="item">分类：<a href="csgo-course/csgo-console-commands/csgo-console-commands.htm" rel="category tag">CSGO指令命令</a> / <a href="csgo-course/csgo-course.htm" rel="category tag">CSGO教程攻略</a></span>
+				<span class="item post-views">阅读(60542)</span>				<span class="item">评论(0)</span>
+				<span class="item"></span>
+			</div>
+		</header>
+				<article class="article-content">
+			
+			
+			<div style="width:100%;">
+			    <a target="_blank" onclick="_hmt.push(['_trackEvent', 'd2topbox', 'click', 'post'])" href=" https://www.rushb.net/go/d2topbox" rel="nofollow"><img src="wp-content/uploads/2022/06/new820150.png"></a>
+            </div>
+			
+			
+						<p>本文将教新人玩家在CSGO中如何使用按键绑定控制台指令命令等相关内容，具体教程如下：</p>
+<p>CSGO提供了两个按键绑定指令，分别是bind与BindToggle，用于不同的控制台指令。</p>
+<h2>bind</h2>
+<p>格式：</p>
+<pre>bind x "指令"</pre>
+<p>bind指令用于将控制台指令绑定到指定按键上，一个按键可绑定多条指令（英文分号隔开），按下即生效，比如用于设置一键购买武器、装备、一键清除血迹等，例如：</p>
+<p>按下R键换弹和清除血迹：</p>
+<pre class="prettyprint"><span class="pln">bind r </span><span class="str">"+reload;r_cleardecals"</span></pre>
+<p>按下小键盘1购买M4/AK、头甲、烟闪雷火：</p>
+<pre>bind kp_end "buy m4a1; buy hegrenade; buy flashbang; buy smokegrenade; buy incgrenade; buy vesthelm;"</pre>
+<p>&nbsp;</p>
+<h2>BindToggle</h2>
+<p>格式：</p>
+<pre><span class="pln">BindToggle x </span><span class="str">"指令"</span></pre>
+<p>与biind不同，BindToggle只能绑定一条指令，主要用于部分开关指令，比如无限弹药指令：无限弹药开启（sv_infinite_ammo 1），无限弹药关闭（sv_infinite_ammo 0），需要另外输入0或1来开启关闭，这时就需要用到BindToggle，按下指定按键开启，再按下关闭。</p>
+<p>X键控制语音通信开关</p>
+<pre><span class="pln">BindToggle x </span><span class="str">"voice_enable"</span></pre>
+<p>Q键控制左右手切换</p>
+<pre>BindToggle q <span class="str">"cl_righthand"</span></pre>
+<p>&nbsp;</p>
+<h2>unbind</h2>
+<p>格式：</p>
+<pre>unbind x</pre>
+<p>如果不小心绑定成错误的按键，那么可通过unbind指令解绑。</p>
+<p>解绑小键盘1</p>
+<pre>unbind kp_end</pre>
+<p>&nbsp;</p>
+<p>其他还有key_listboundkeys指令，用于查看所有按键绑定了什么功能，具体教程见：</p>
+<p><a href="csgo-key_listboundkeys_2.html" target="_blank" rel="noopener">https://www.rushb.net/csgo-key_listboundkeys.html</a></p>
+<p>&nbsp;</p>
+<p>以下是键盘每个按键的控制台名称：</p>
+<table id="table" class="table table-hover">
+<tbody>
+<tr class="tsr">
+<td class="ts">小键盘  1</td>
+<td class="ts">kp_end</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  2</td>
+<td class="ts">kp_downarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  3</td>
+<td class="ts">kp_pgdn</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  4</td>
+<td class="ts">kp_leftarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  5</td>
+<td class="ts">kp_5</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  6</td>
+<td class="ts">kp_rightarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  7</td>
+<td class="ts">kp_home</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  8</td>
+<td class="ts">kp_uparrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  9</td>
+<td class="ts">kp_pgup</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  0</td>
+<td class="ts">kp_ins</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  .</td>
+<td class="ts">kp_del</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  /</td>
+<td class="ts">kp_slash</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  *</td>
+<td class="ts">kp_multiply</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  –</td>
+<td class="ts">kp_minus</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  +</td>
+<td class="ts">kp_plus</td>
+</tr>
+<tr class="tsr">
+<td class="ts">小键盘  Enter</td>
+<td class="ts">kp_enter</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Insert</td>
+<td class="ts">ins</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Delete</td>
+<td class="ts">del</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Home</td>
+<td class="ts">home</td>
+</tr>
+<tr class="tsr">
+<td class="ts">End</td>
+<td class="ts">end</td>
+</tr>
+<tr class="tsr">
+<td class="ts">上一页</td>
+<td class="ts">pgup</td>
+</tr>
+<tr class="tsr">
+<td class="ts">下一页</td>
+<td class="ts">pgdn</td>
+</tr>
+<tr class="tsr">
+<td class="ts">上</td>
+<td class="ts">uparrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">左</td>
+<td class="ts">leftarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">下</td>
+<td class="ts">downarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">右</td>
+<td class="ts">rightarrow</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F1</td>
+<td class="ts">f1</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F2</td>
+<td class="ts">f2</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F3</td>
+<td class="ts">f3</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F4</td>
+<td class="ts">f4</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F5</td>
+<td class="ts">f5</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F6</td>
+<td class="ts">f6</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F7</td>
+<td class="ts">f7</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F8</td>
+<td class="ts">f8</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F9</td>
+<td class="ts">f9</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F10</td>
+<td class="ts">f10</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F11</td>
+<td class="ts">f11</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F12</td>
+<td class="ts">f12</td>
+</tr>
+<tr class="tsr">
+<td class="ts">1</td>
+<td class="ts">1</td>
+</tr>
+<tr class="tsr">
+<td class="ts">2</td>
+<td class="ts">2</td>
+</tr>
+<tr class="tsr">
+<td class="ts">3</td>
+<td class="ts">3</td>
+</tr>
+<tr class="tsr">
+<td class="ts">4</td>
+<td class="ts">4</td>
+</tr>
+<tr class="tsr">
+<td class="ts">5</td>
+<td class="ts">5</td>
+</tr>
+<tr class="tsr">
+<td class="ts">6</td>
+<td class="ts">6</td>
+</tr>
+<tr class="tsr">
+<td class="ts">7</td>
+<td class="ts">7</td>
+</tr>
+<tr class="tsr">
+<td class="ts">8</td>
+<td class="ts">8</td>
+</tr>
+<tr class="tsr">
+<td class="ts">9</td>
+<td class="ts">9</td>
+</tr>
+<tr class="tsr">
+<td class="ts">0</td>
+<td class="ts">0</td>
+</tr>
+<tr class="tsr">
+<td class="ts">A</td>
+<td class="ts">a</td>
+</tr>
+<tr class="tsr">
+<td class="ts">B</td>
+<td class="ts">b</td>
+</tr>
+<tr class="tsr">
+<td class="ts">C</td>
+<td class="ts">c</td>
+</tr>
+<tr class="tsr">
+<td class="ts">D</td>
+<td class="ts">d</td>
+</tr>
+<tr class="tsr">
+<td class="ts">E</td>
+<td class="ts">e</td>
+</tr>
+<tr class="tsr">
+<td class="ts">F</td>
+<td class="ts">f</td>
+</tr>
+<tr class="tsr">
+<td class="ts">G</td>
+<td class="ts">g</td>
+</tr>
+<tr class="tsr">
+<td class="ts">H</td>
+<td class="ts">h</td>
+</tr>
+<tr class="tsr">
+<td class="ts">I</td>
+<td class="ts">i</td>
+</tr>
+<tr class="tsr">
+<td class="ts">J</td>
+<td class="ts">j</td>
+</tr>
+<tr class="tsr">
+<td class="ts">K</td>
+<td class="ts">k</td>
+</tr>
+<tr class="tsr">
+<td class="ts">L</td>
+<td class="ts">l</td>
+</tr>
+<tr class="tsr">
+<td class="ts">M</td>
+<td class="ts">m</td>
+</tr>
+<tr class="tsr">
+<td class="ts">N</td>
+<td class="ts">n</td>
+</tr>
+<tr class="tsr">
+<td class="ts">O</td>
+<td class="ts">o</td>
+</tr>
+<tr class="tsr">
+<td class="ts">P</td>
+<td class="ts">p</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Q</td>
+<td class="ts">q</td>
+</tr>
+<tr class="tsr">
+<td class="ts">R</td>
+<td class="ts">r</td>
+</tr>
+<tr class="tsr">
+<td class="ts">S</td>
+<td class="ts">s</td>
+</tr>
+<tr class="tsr">
+<td class="ts">T</td>
+<td class="ts">t</td>
+</tr>
+<tr class="tsr">
+<td class="ts">U</td>
+<td class="ts">u</td>
+</tr>
+<tr class="tsr">
+<td class="ts">V</td>
+<td class="ts">v</td>
+</tr>
+<tr class="tsr">
+<td class="ts">W</td>
+<td class="ts">w</td>
+</tr>
+<tr class="tsr">
+<td class="ts">X</td>
+<td class="ts">x</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Y</td>
+<td class="ts">y</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Z</td>
+<td class="ts">z</td>
+</tr>
+<tr class="tsr">
+<td class="ts">空格</td>
+<td class="ts">space</td>
+</tr>
+<tr class="tsr">
+<td class="ts">–</td>
+<td class="ts">–</td>
+</tr>
+<tr class="tsr">
+<td class="ts">=</td>
+<td class="ts">=</td>
+</tr>
+<tr class="tsr">
+<td class="ts">[</td>
+<td class="ts">[</td>
+</tr>
+<tr class="tsr">
+<td class="ts">]</td>
+<td class="ts">]</td>
+</tr>
+<tr class="tsr">
+<td class="ts">\</td>
+<td class="ts">\</td>
+</tr>
+<tr class="tsr">
+<td class="ts">;</td>
+<td class="ts">semicolon</td>
+</tr>
+<tr class="tsr">
+<td class="ts">‘</td>
+<td class="ts">‘</td>
+</tr>
+<tr class="tsr">
+<td class="ts">,</td>
+<td class="ts">,</td>
+</tr>
+<tr class="tsr">
+<td class="ts">.</td>
+<td class="ts">.</td>
+</tr>
+<tr class="tsr">
+<td class="ts">/</td>
+<td class="ts">/</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Backspace</td>
+<td class="ts">backspace</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Tab</td>
+<td class="ts">tab</td>
+</tr>
+<tr class="tsr">
+<td class="ts">Enter</td>
+<td class="ts">enter</td>
+</tr>
+<tr class="tsr">
+<td class="ts">大写键</td>
+<td class="ts">capslock</td>
+</tr>
+<tr class="tsr">
+<td class="ts">左Shift</td>
+<td class="ts">shift</td>
+</tr>
+<tr class="tsr">
+<td class="ts">右Shift</td>
+<td class="ts">rshift</td>
+</tr>
+<tr class="tsr">
+<td class="ts">左Ctrl</td>
+<td class="ts">ctrl</td>
+</tr>
+<tr class="tsr">
+<td class="ts">右Ctrl</td>
+<td class="ts">rctrl</td>
+</tr>
+<tr class="tsr">
+<td class="ts">左Alt</td>
+<td class="ts">alt</td>
+</tr>
+<tr class="tsr">
+<td class="ts">右Alt</td>
+<td class="ts">ralt</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标左键</td>
+<td class="ts">mouse1</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标右键</td>
+<td class="ts">mouse2</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标中键</td>
+<td class="ts">mouse3</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标侧键1</td>
+<td class="ts">mouse4</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标侧键2</td>
+<td class="ts">mouse5</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标滚轮下</td>
+<td class="ts">mwheeldown</td>
+</tr>
+<tr class="tsr">
+<td class="ts">鼠标滚轮上</td>
+<td class="ts">mwheelup</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+		</article>
+								            <div class="post-actions">
+            	<a href="javascript:;" etap="like" class="post-like action action-like" data-pid="2684"><i class="fa fa-thumbs-o-up"></i>赞(<span>93</span>)</a>            	            	            </div>
+        		<div class="post-copyright">未经允许不得转载：<a href="www_rushb_default.html">CSGO RushB中文网</a> &raquo; <a href="csgo-bind-bindtoggle_2.html">CSGO按键绑定控制台指令教程【bind与BindToggle】</a></div>		
+					<div class="action-share"></div>
+		
+		<div class="article-tags">标签：<a href="tag/bind.htm" rel="tag">bind</a><a href="tag/bindtoggle.htm" rel="tag">BindToggle</a><a href="tag/����/����.htm" rel="tag">代码</a><a href="tag/�ر�/�ر�.htm" rel="tag">关闭</a><a href="tag/ͬ��.htm" rel="tag">同个</a><a href="tag/����/����.htm" rel="tag">命令</a><a href="tag/���.htm" rel="tag">多个</a><a href="tag/������.htm" rel="tag">左右手</a><a href="tag/����.htm" rel="tag">开关</a><a href="tag/����.htm" rel="tag">开启</a><a href="tag/ָ��/ָ��.htm" rel="tag">指令</a><a href="tag/����.htm" rel="tag">按键</a><a href="tag/����̨/����̨.htm" rel="tag">控制台</a><a href="tag/��.htm" rel="tag">绑定</a><a href="tag/���.htm" rel="tag">解绑</a><a href="tag/����/����.htm" rel="tag">键盘</a></div>
+		
+		
+		            <nav class="article-nav">
+                <span class="article-nav-prev">上一篇<br><a href="csgo-map-dust-ii-night_2.html" rel="prev">CSGO地图推荐：Dust II Night（炙热沙城2 夜晚版）</a></span>
+                <span class="article-nav-next">下一篇<br><a href="csgo-stats-auto-demo_2.html" rel="next">【CS:GO Stats】自动收集、分析官匹DEMO，随时查看战绩数据</a></span>
+            </nav>
+        
+				<div class="relates"><div class="title"><h3>推荐</h3></div><ul><li><a href="csgo-map-radar-show-all_2.html">CSGO单机显示敌方玩家位置指令</a></li><li><a href="csgo-camera-path-move-commands_2.html">CSGO摄像机路径（画面移动）指令</a></li><li><a href="csgo-spectators-max-command_2.html">CSGO设置自定义房间观战人数指令</a></li><li><a href="csgo-perfect-world-hualian-musicbox_2.html">CSGO国服五周年中文音乐盒：花脸 试听指令</a></li><li><a href="csgo-ct-ak-t-m4-skins_2.html">CT用皮肤AK，Give指令获取带皮肤的武器</a></li></ul></div>					</div>
+	</div>
+	<div class="sidebar">
+<div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div>
+	<a target="_blank" onclick="_hmt.push(['_trackEvent', 'hash', 'click', 'pc_all_right2'])" href="	https://www.rushb.net/go/hash" rel="nofollow"><img src="wp-content/uploads/2021/07/88hash360.png" alt="88s"></a>
+</div></div></div><div class="widget widget_ui_posts"><h3>置顶推荐</h3><ul><li><a target="_blank" href="csgo-map-agent-lab_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2021/02/agentlab2021-1-220x150.png" alt="CSGO 探员、刀子、音乐盒 体验地图：Agent Lab-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO 探员、刀子、音乐盒 体验地图：Agent Lab</span><span class="muted">2021-02-20</span></a></li>
+<li><a target="_blank" href="csgo-all-give-commands_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2020/03/csgogive-220x150.png" alt="CSGO武器、装备Give获取控制台指令【2022版】-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO武器、装备Give获取控制台指令【2022版】</span><span class="muted">2020-03-21</span></a></li>
+<li><a target="_blank" href="csgo-name-change-font_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2019/03/namefont-220x150.png" alt="CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法</span><span class="muted">2019-09-14</span></a></li>
+</ul></div><div class="widget widget_ui_posts"><h3>热门文章</h3><ul class="nopic"><li><a target="_blank" href="csgo-deathnotices-command_2.html"><span class="text">CSGO关闭右上角击杀提示指令</span><span class="muted">2022-01-19</span></a></li>
+<li><a target="_blank" href="mapcore-exotic-places-contest-top-10_2.html"><span class="text">Mapcore异国情调地图设计大赛前十名</span><span class="muted">2020-02-11</span></a></li>
+<li><a target="_blank" href="csgo-bind-bindtoggle_2.html"><span class="text">CSGO按键绑定控制台指令教程【bind与BindToggle】</span><span class="muted">2019-10-06</span></a></li>
+<li><a target="_blank" href="csgo-riptide-week-6_2.html"><span class="text">死斗七连杀！激流大行动第六周任务攻略</span><span class="muted">2021-10-20</span></a></li>
+<li><a target="_blank" href="csgo-map-grind_2.html"><span class="text">CSGO地图推荐：Grind</span><span class="muted">2019-09-07</span></a></li>
+</ul></div></div></section>
+
+
+<footer class="footer">
+	<div class="container">
+							<div class="fcode">
+				<a style="font-size:14px;" target="_blank" rel="nofollow" href="connect_2.htm">
+<b>网站合作 联系本站</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/bilibili">
+<b>哔哩哔哩</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/qq">
+<b>QQ群 97574671</b>
+</a>
+			</div>
+				<p>&copy; 2023 <a href="https://www.rushb.net/www_rushb_default.html">CSGO RushB中文网</a> &nbsp; <a href="sitemap.xml">网站地图</a>
+</p>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f66fd8235142d9ab480f67b9d46e106f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	</div>
+</footer>
+
+
+
+<script>
+window.jsui={
+	www: 'https://www.rushb.net',
+	uri: 'https://www.rushb.net/wp-content/themes/dux',
+	ver: '5.1',
+	roll: ["1","2"],
+	ajaxpager: '0',
+	url_rp: 'https://www.rushb.net/connect'
+};
+</script>
+<script type='text/javascript' src='https://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js?ver=5.1'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-content/themes/dux/js/loader.js'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

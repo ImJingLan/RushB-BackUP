@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="https://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="CSGO RushB中文网">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>【教程】如何制作CSGO头号特训地图-CSGO RushB中文网</title>
+<link rel='dns-prefetch' href='https://apps.bdimg.com/' />
+<link rel='dns-prefetch' href='www_rushb_default.html' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel='stylesheet' id='_bootstrap-css'  href='wp-content/themes/dux/css/bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_fontawesome-css'  href='wp-content/themes/dux/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_main-css'  href='wp-content/themes/dux/css/main.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js?ver=5.1'></script>
+<link rel='https://api.w.org/' href='wp-json/wp-json.json' />
+<link rel='prev' title='CSGO游戏内购买道具/物品退款教程' href='csgo-item-refund_2.html' />
+<link rel='next' title='CSGO或加入雪球模式【已更新】' href='csgo-snowball_2.html' />
+<link rel="canonical" href="csgo-creating-a-danger-zone-map_2.html" />
+<link rel='shortlink' href='https://www.rushb.net/?p=609' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed_569.json" />
+<link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embed_569.xml" />
+<meta name="keywords" content="csgo, 创建, 制作, 危险地带, 地图, 头号特训, 生存, 神秘小镇, CSGO创意工坊">
+<meta name="description" content="CSGO头号特训（危险地带/Danger Zone）是小规模快节奏Battle royale游戏模式，玩家将扮演特训选手将借助虚拟现实设备传送至神秘小镇，通过搜寻装备、物资、使用兑换券升级装备，以淘汰其他选手，以此选拔出最优秀的户外特训战士。  目前，CSGO官方只发布了一张头号特训地图《神秘小镇》，而且没有公布开发文档，但已有玩家研究出了如何制作头号特训地图，以下是详细内容：  注意：本文来自V">
+<style>a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span{color: #555555;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #555555;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #555555;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #555555;}.excerpt .cat i{border-left-color:#555555;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #555555;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#555555;}}.post-actions .action.action-like{background-color: #555555;}.catleader h1{border-left-color: #555555;}pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;
+}
+.article-content a:hover span{color: #45B6F7;}</style><link rel="shortcut icon" href="favicon.ico">
+<!--[if lt IE 9]><script src="https://www.rushb.net/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="post-template-default single single-post postid-609 single-format-standard m-excerpt-cat site-layout-2 text-justify-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="www_rushb_default.html" title="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网"><img src="wp-content/uploads/2018/10/RUSHBlogo.png" alt="RushB中文网-反恐精英全球攻势中文网站-CSGO中文网">CSGO RushB中文网</a></div>		<div class="brand">RushB中文网<br>CSGO / 反恐精英：全球攻势</div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a title="CSGO新闻资讯" href="csgo-news/csgo-news.htm">新闻资讯</a></li>
+<li id="menu-item-3886" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-3886"><a title="CSGO教程攻略" href="csgo-course/csgo-course.htm">教程攻略</a>
+<ul class="sub-menu">
+	<li id="menu-item-4542" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4542"><a title="CSGO指令命令" href="csgo-course/csgo-console-commands/csgo-console-commands.htm">CSGO指令命令</a></li>
+</ul>
+</li>
+<li id="menu-item-51" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-51"><a title="CSGO比赛信息" href="csgo-matchs/csgo-matchs.htm">比赛信息</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a title="CSGO更新日志" href="csgo-updates-log/csgo-updates-log.htm">更新日志</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-52"><a title="CSGO资源壁纸" href="csgo-resources-wallpapers/csgo-resources-wallpapers.htm">资源壁纸</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-55"><a title="CSGO创意工坊" href="csgo-workshop/csgo-workshop.htm">创意工坊</a></li>
+<li id="menu-item-433" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-433"><a title="CSCO经典攻势" href="csco/csco.htm">经典攻势</a></li>
+<li id="menu-item-5883" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5883"><a title="CSGO职业选手外设、设置指令" href="pro-player-settings/pro-player-settings.htm">选手设置</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+				<div class="topbar">
+			<ul class="site-nav topmenu">
+											</ul>
+					</div>
+						<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="www_rushb_default.html" ><input class="search-input" name="s" type="text" placeholder="输入关键字" value=""><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>	<div class="breadcrumbs">
+		<div class="container">当前位置：<a href="www_rushb_default.html">CSGO RushB中文网</a> <small>></small> <a href="csgo-workshop/csgo-workshop.htm">CSGO创意工坊</a> <small>></small> 正文</div>
+	</div>
+<section class="container">
+	<div class="content-wrap">
+	<div class="content">
+				<header class="article-header">
+			<h1 class="article-title"><a href="csgo-creating-a-danger-zone-map_2.html">【教程】如何制作CSGO头号特训地图</a></h1>
+			<div class="article-meta">
+				<span class="item">2018-12-11</span>
+												<span class="item">分类：<a href="csgo-workshop/csgo-workshop.htm" rel="category tag">CSGO创意工坊</a></span>
+				<span class="item post-views">阅读(5093)</span>				<span class="item">评论(0)</span>
+				<span class="item"></span>
+			</div>
+		</header>
+				<article class="article-content">
+			
+			
+			<div style="width:100%;">
+			    <a target="_blank" onclick="_hmt.push(['_trackEvent', 'd2topbox', 'click', 'post'])" href=" https://www.rushb.net/go/d2topbox" rel="nofollow"><img src="wp-content/uploads/2022/06/new820150.png"></a>
+            </div>
+			
+			
+						<p>CSGO头号特训（危险地带/Danger Zone）是小规模快节奏Battle royale游戏模式，玩家将扮演特训选手将借助虚拟现实设备传送至神秘小镇，通过搜寻装备、物资、使用兑换券升级装备，以淘汰其他选手，以此选拔出最优秀的户外特训战士。</p>
+<p>目前，CSGO官方只发布了一张头号特训地图《神秘小镇》，而且没有公布开发文档，但已有玩家研究出了如何制作头号特训地图，以下是详细内容：</p>
+<p><em>注意：本文来自VALVE开发社区，原文并不完善，仅供参考，并且需要CSGO地图制作相关知识，</em></p>
+<h2>头号特训地图基本要求</h2>
+<p><strong>trigger_survival_playarea</strong></p>
+<p>地图大小至少13440×13440单位，但建议为16384×16384单位，因为这是官方地图的大小。</p>
+<p>当在地图顶部使用画笔部署黑鹰直升机后，退出画笔按E可放下降落绳。</p>
+<p>黑鹰直升机应部署在可游玩区域，使用触发纹理。</p>
+<p><strong>point_dz_weaponspawn</strong></p>
+<p>武器刷新点应散布在地图周围，并且之间需要有一定间隔，否则可能无法刷新。</p>
+<p>注意：为了保证玩家在选择降落点后不会崩溃，武器刷新点需要保证一定数值，数值推断大概在90-230之间，而神秘小镇这张地图有530个武器刷新点。</p>
+<p>&nbsp;</p>
+<h2>基本实体</h2>
+<p><strong>info_gascanister_launchpoint</strong></p>
+<p>指定爆炸油桶发射位置</p>
+<p><strong>info_map_region</strong></p>
+<p>用于设置地图区域的名称</p>
+<p><strong>point_dz_dronegun</strong></p>
+<p>设置无人机枪刷新点</p>
+<p><strong>point_dz_parachute</strong></p>
+<p>设置降落伞刷新点</p>
+<p><strong>func_hostage_rescue</strong></p>
+<p>人质救援区域触发区域</p>
+<p><strong>func_tablet_blocker</strong></p>
+<p>禁止地底玩家使用平板电脑触发区域</p>
+<p><strong>game_survival_logic</strong></p>
+<p>游戏期间发生某事件需要的触发实体</p>
+<p><strong>trigger_survival_playarea</strong></p>
+<p>设定生存区域触发边界</p>
+<p><strong>dz_door</strong></p>
+<p>设定需要金钱解锁的铁门</p>
+<p><strong>point_dz_weaponspawn</strong></p>
+<p>武器刷新点</p>
+<p>&nbsp;</p>
+<h2>由<strong>point_dz_weaponspawn生成的实体</strong></h2>
+<p><strong>func_survival_c4_target</strong></p>
+<p>保险柜</p>
+<p><strong>prop_weapon_upgrade_chute</strong></p>
+<p>降落伞</p>
+<p><strong>prop_weapon_upgrade_tablet_zoneintel</strong></p>
+<p>平板电脑升级芯片：显示下一区域</p>
+<p><strong>prop_weapon_upgrade_tablet_droneintel</strong></p>
+<p>平板电脑升级芯片：显示无人机及其踪迹</p>
+<p><strong>prop_weapon_upgrade_tablet_highres</strong></p>
+<p>平板电脑升级芯片：提高玩家位置精度</p>
+<p><strong>prop_weapon_upgrade_contractkill</strong></p>
+<p>淘汰目标h合同</p>
+<p><strong>prop_weapon_upgrade_armor_helmet</strong></p>
+<p>盔甲和头盔</p>
+<p><strong>prop_money_crate</strong></p>
+<p>金钱袋</p>
+<p><strong>prop_metal_crate</strong></p>
+<p>微冲武器箱</p>
+<p><strong>prop_loot_crate</strong></p>
+<p>各种箱子，包括工具、爆破道具、手枪等</p>
+<p><strong>prop_ammo_box_generic</strong></p>
+<p>弹药箱</p>
+<p><strong>item_cash</strong></p>
+<p>金钱</p>
+<p><strong>dronegun</strong></p>
+<p>无人机炮塔</p>
+<p><strong>hostage_entity</strong></p>
+<p>人质</p>
+<p>&nbsp;</p>
+<h2>限制玩家降落区域</h2>
+<p>通过放置在文件路径csgo/maps/，名称格式为dz_mapname_spawnmask的PNG图片文件实现，黑色填充区域代表禁止降落位置。</p>
+<p><img class="alignnone size-full wp-image-623" src="wp-content/uploads/2018/12/Dz_blacksite_spawnmask.png" alt="" width="256" height="256" /></p>
+<p>&nbsp;</p>
+<h2>平板电脑地图显示图像</h2>
+<p>通过放置在文件路径csgo/materials/models/weapons/v_models/tablet/，名称格式为tablet_radar_dz_mapname的VTF纹理文件实现。</p>
+<p><img class="alignnone size-full wp-image-624" src="wp-content/uploads/2018/12/450px-Tablet_radar_dz_blacksite.jpg" alt="" width="450" height="450" /></p>
+<p>&nbsp;</p>
+<h2>选择降落点界面地图图像</h2>
+<p>通过放置在文件路径csgo/materials/panorama/images/survival/spawnselect/，名称格式为map_dz_mapname的PNG图像文件实现。</p>
+<p><img class="alignnone size-full wp-image-625" src="wp-content/uploads/2018/12/450px-Map_dz_blacksite.png" alt="" width="450" height="450" /></p>
+<p><em>VALVE开发社区<a href="https://developer.valvesoftware.com/wiki/Creating_a_Danger_Zone_Map" target="_blank" rel="noopener">原文地址</a></em></p>
+		</article>
+								            <div class="post-actions">
+            	<a href="javascript:;" etap="like" class="post-like action action-like" data-pid="609"><i class="fa fa-thumbs-o-up"></i>赞(<span>7</span>)</a>            	            	            </div>
+        		<div class="post-copyright">未经允许不得转载：<a href="www_rushb_default.html">CSGO RushB中文网</a> &raquo; <a href="csgo-creating-a-danger-zone-map_2.html">【教程】如何制作CSGO头号特训地图</a></div>		
+					<div class="action-share"></div>
+		
+		<div class="article-tags">标签：<a href="tag/csgo/csgo.htm" rel="tag">csgo</a><a href="tag/����.htm" rel="tag">创建</a><a href="tag/����.htm" rel="tag">制作</a><a href="tag/Σ�յش�.htm" rel="tag">危险地带</a><a href="tag/��ͼ/��ͼ.htm" rel="tag">地图</a><a href="tag/ͷ����ѵ/ͷ����ѵ.htm" rel="tag">头号特训</a><a href="tag/����.htm" rel="tag">生存</a><a href="tag/����С��.htm" rel="tag">神秘小镇</a></div>
+		
+		
+		            <nav class="article-nav">
+                <span class="article-nav-prev">上一篇<br><a href="csgo-item-refund_2.html" rel="prev">CSGO游戏内购买道具/物品退款教程</a></span>
+                <span class="article-nav-next">下一篇<br><a href="csgo-snowball_2.html" rel="next">CSGO或加入雪球模式【已更新】</a></span>
+            </nav>
+        
+				<div class="relates"><div class="title"><h3>推荐</h3></div><ul><li><a href="csgo-workshop-map-mirage-plus_2.html">创意工坊地图推荐：荒漠迷城+</a></li><li><a href="csgo-case-operationoperation-release-order-time_2.html">CSGO已推出的武器箱、大行动更新时间列表【新增印花胶囊】</a></li><li><a href="csgo-removed-map-chlorine_2.html">被移除的CSGO地图：科洛林</a></li><li><a href="csgo-workshop-map-palais_2.html">CSGO搭档地图推荐：Palais</a></li><li><a href="csgo-update-2022-12-17_2.html">CSGO 2022年12月17日更新日志「多张地图改进」</a></li></ul></div>					</div>
+	</div>
+	<div class="sidebar">
+<div class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div>
+	<a target="_blank" onclick="_hmt.push(['_trackEvent', 'hash', 'click', 'pc_all_right2'])" href="	https://www.rushb.net/go/hash" rel="nofollow"><img src="wp-content/uploads/2021/07/88hash360.png" alt="88s"></a>
+</div></div></div><div class="widget widget_ui_posts"><h3>置顶推荐</h3><ul><li><a target="_blank" href="csgo-map-agent-lab_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2021/02/agentlab2021-1-220x150.png" alt="CSGO 探员、刀子、音乐盒 体验地图：Agent Lab-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO 探员、刀子、音乐盒 体验地图：Agent Lab</span><span class="muted">2021-02-20</span></a></li>
+<li><a target="_blank" href="csgo-all-give-commands_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2020/03/csgogive-220x150.png" alt="CSGO武器、装备Give获取控制台指令【2022版】-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO武器、装备Give获取控制台指令【2022版】</span><span class="muted">2020-03-21</span></a></li>
+<li><a target="_blank" href="csgo-name-change-font_2.html"><span class="thumbnail"><img data-src="https://www.rushb.net/wp-content/uploads/2019/03/namefont-220x150.png" alt="CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法-CSGO RushB中文网" src="wp-content/themes/dux/img/thumbnail.png" class="thumb"></span><span class="text">CSGO玩家名称/武器改名卡使用花体、斜体等特殊字体方法</span><span class="muted">2019-09-14</span></a></li>
+</ul></div><div class="widget widget_ui_posts"><h3>热门文章</h3><ul class="nopic"><li><a target="_blank" href="csgo-dlight-debug_2.html"><span class="text">CSGO指令：生成一个临时光源</span><span class="muted">2022-03-27</span></a></li>
+<li><a target="_blank" href="csgo-c4-commands_2.html"><span class="text">CSGO 炸弹/C4相关控制台指令</span><span class="muted">2020-03-31</span></a></li>
+<li><a target="_blank" href="csgo-colorblind-mode_2.html"><span class="text">【教程】色盲玩家如何玩CSGO？</span><span class="muted">2019-04-05</span></a></li>
+<li><a target="_blank" href="https://www.rushb.net/csgo-run-map-commands_2.html"><span class="text">CSGO跑图研究、投掷物练习必备控制台指令命令</span><span class="muted">2019-06-10</span></a></li>
+<li><a target="_blank" href="https://www.rushb.net/csgo-skybox-magic-molly_2.html"><span class="text">天空盒？CSGO超远燃烧弹BUG原理</span><span class="muted">2021-08-04</span></a></li>
+</ul></div></div></section>
+
+
+<footer class="footer">
+	<div class="container">
+							<div class="fcode">
+				<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/connect_2.htm">
+<b>网站合作 联系本站</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/bilibili">
+<b>哔哩哔哩</b>
+</a>
+ | 
+<a style="font-size:14px;" target="_blank" rel="nofollow" href="https://www.rushb.net/go/qq">
+<b>QQ群 97574671</b>
+</a>
+			</div>
+				<p>&copy; 2023 <a href="https://www.rushb.net/www_rushb_default.html">CSGO RushB中文网</a> &nbsp; <a href="sitemap.xml">网站地图</a>
+</p>
+		<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f66fd8235142d9ab480f67b9d46e106f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>	</div>
+</footer>
+
+
+
+<script>
+window.jsui={
+	www: 'https://www.rushb.net',
+	uri: 'https://www.rushb.net/wp-content/themes/dux',
+	ver: '5.1',
+	roll: ["1","2"],
+	ajaxpager: '0',
+	url_rp: 'https://www.rushb.net/connect'
+};
+</script>
+<script type='text/javascript' src='https://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js?ver=5.1'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-content/themes/dux/js/loader.js'></script>
+<script type='text/javascript' src='https://www.rushb.net/wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

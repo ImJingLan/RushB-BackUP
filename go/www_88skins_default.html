@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="origin">
+  <title>88SkinsCSGO开箱网站-DOTA2开箱_88steam_88skins_88Hash_CSGO皮肤饰品交易平台</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--    <meta name="viewport" content="user-scalable=yes">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <Meta name="Robots" Content="All">
+    <Meta name="Description"
+          Content="88hash是CSGO开箱和dota2游戏开箱专业的CSGO皮肤饰品交易平台,其中包括88steam、88skins、yesskins、zeroskins、21skins等热门交易平台信息,CSGObuff武器、及v5boss即开即取，全网独家能即开即取的csgo开箱网站。">
+      <Meta name="Keywords"
+            Content="88skins,csgo,csgo开箱网站,csgo交易平台,csgo皮肤交易,csgo饰品交易,csgo,dota2,csgo开箱,88steam,88skins,yesskins,zeroskins,21skins,v5boss,buff,66skins,d2topbox">
+        <!-- Set render engine for 360 browser -->
+        <meta name="baidu-site-verification" content="M2fkc2LlsV"/>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <!-- 设置锁定横屏、竖屏显示模式，portrait（竖屏），landscape（横屏） -->
+        <meta name="x5-orientation" content="portrait"/>
+        <!-- 设置全屏显示页面 -->
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="full-screen" content="yes"/>
+        <!-- 开启页面以应用模式显示（全屏显示等） -->
+        <meta name="x5-page-mode" content="app"/>
+        <!--               No Baidu Siteapph-->
+        <meta http-equiv="Cache-Control" content="no-siteapp"/>
+        <meta name="google" content="notranslate"/>
+        <meta name="format-detection" content="telephone=no"/>
+        <link href="https://www.88skins.com/favicon.ico" rel="icon" type="image/x-icon">
+        <!-- Google tag (gtag.js) -->
+        <!--         88hash google-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYXPF9Y2DS"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+
+          gtag('js', new Date());
+          gtag('config', 'G-QYXPF9Y2DS'); </script>
+        <script>
+          window.lang = 'ZH';
+          localStorage.setItem('lang', 'ZH');
+        </script>
+        <!-- 88skins Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3CCDMLBCJ"></script>
+        <script> window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-J3CCDMLBCJ'); </script>
+
+        <style>
+          html{
+            scroll-behavior: smooth;
+            margin: 0;
+            padding: 0;
+            background: black;
+          }
+
+          .custom-btn{
+            position: fixed;
+            bottom: 5%;
+            right: 2.5%;
+            height: 0.76rem;
+            width: 0.76rem;
+            z-index: 999;
+            border-radius: 50%;
+            display: none;
+            cursor: pointer;
+          }
+
+          .spinner-box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #141726
+          }
+
+          .spinner{
+            margin: 300px auto;
+            width: 50px;
+            height: 60px;
+            text-align: center;
+            font-size: 10px;
+            display: flex;
+            justify-content: space-around
+          }
+
+          .spinner > div{
+            background-color: #D4A012;
+            height: 100%;
+            width: 6px;
+            display: inline-block;
+            -webkit-animation: stretchDelayz 1.2s infinite ease-in-out;
+            animation: stretchDelayz 1.2s infinite ease-in-out
+          }
+
+          .spinner .rect2{
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s
+          }
+
+          .spinner .rect3{
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s
+          }
+
+          .spinner .rect4{
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s
+          }
+
+          .spinner .rect5{
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s
+          }
+
+          @-webkit-keyframes stretchDelayz{
+            0%, 40%, 100%{
+              -webkit-transform: scaleY(0.4)
+            }
+            20%{
+              -webkit-transform: scaleY(1.0)
+            }
+          }
+
+          @keyframes stretchDelayz{
+            0%, 40%, 100%{
+              transform: scaleY(0.4);
+              -webkit-transform: scaleY(0.4)
+            }
+            20%{
+              transform: scaleY(1.0);
+              -webkit-transform: scaleY(1.0)
+            }
+          }
+
+          .spinnebr-box{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #485460;
+          }
+
+          .spinnebr-box > div{
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .loading-box{
+            display: flex;
+          }
+
+          .loading-tips{
+            margin-top: 15px;
+            font-size: 16px;
+            margin-left: 18px;
+            text-align: center;
+            font-family: Apple;
+            color: #FFFFFF;
+
+          }
+
+          .loading-box > div{
+            height: 12px;
+            width: 12px;
+            margin: 0 6px;
+            border-radius: 50%;
+            background: #E0740B;
+            /*-webkit-animation: stretchDelay 1s infinite ease-in-out;*/
+            animation: stretchDelay .9s infinite cubic-bezier(0.01, 0.91, 0.76, 0.71);
+          }
+
+          .loading-box > div:nth-child(1){
+            background: #7ed6df;
+            -webkit-animation-delay: .1s;
+            animation-delay: .1s
+          }
+
+          .loading-box > div:nth-child(2){
+            background: #e056fd;
+            -webkit-animation-delay: .2s;
+            animation-delay: .25s
+          }
+
+          .loading-box > div:nth-child(3){
+            background: #f9ca24;
+            -webkit-animation-delay: .3s;
+            animation-delay: .4s
+          }
+
+          .loading-box > div:nth-child(4){
+            background: #ff7979;
+            -webkit-animation-delay: .4s;
+            animation-delay: .55s
+          }
+
+          .loading-box > div:nth-child(5){
+            background: #f9ca24;
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s
+          }
+
+          @-webkit-keyframes stretchDelay{
+            0%{
+              -webkit-transform: translateY(0)
+            }
+            50%{
+              -webkit-transform: translateY(-20px)
+            }
+            100%{
+              -webkit-transform: translateY(0)
+            }
+          }
+        </style>
+        <link href="https://www.88skins.com/js/Drop.3c276c65.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/Welfare.a2c36b2e.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/active.3e61fff4.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/battleDetail.05a49743.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/battleDetail%7Ecasebattle.7f144a06.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/case.5e3f0a6e.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/casebattle.b22992d1.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/chunk-01b95900.a0ed22c4.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/chunk-04c34aac.1ede633f.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/chunk-1188dcb6.e625bc14.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/freeSKins.1073b607.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/helpCenter.9b499cee.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/home.c1405d5b.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/instrutions.e0801d89.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/openBox.79d077ff.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/openBox%7Epromomion.3431ed00.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/promomion.bf93549b.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/roll.cc5f664b.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/rollDetail.dab0d596.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/store.131c37ba.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/upgrade.aa394f1f.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/user.bc99854d.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/wish.843da7c9.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/wishD.0764a23b.js" rel="prefetch" crossorigin="anonymous"><link href="https://www.88skins.com/js/chunk-vendors.8d6d92b9.js" rel="preload" as="script" crossorigin="anonymous"><link href="https://www.88skins.com/js/index.60b2d5c8.js" rel="preload" as="script" crossorigin="anonymous"></head>
+<body>
+<noscript>
+  <strong>
+    We're sorry but neeko_frontend doesn't work properly without JavaScript enabled. Please enable it to
+    continue.
+  </strong>
+</noscript>
+<div id="app">
+  <!--    <div class="spinner-box">-->
+  <!--        <div class="spinner">-->
+  <!--            <div class="rect1"></div>-->
+  <!--            <div class="rect2"></div>-->
+  <!--            <div class="rect3"></div>-->
+  <!--            <div class="rect4"></div>-->
+  <!--            <div class="rect5"></div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+  <div class="spinnebr-box">
+    <div>
+      <div class="loading-box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="loading-tips">Loading<span class="dot">...</span></div>
+    </div>
+  </div>
+
+  <div>
+    <h1><img class="logo" alt="88skins"/></h1>
+    <header>
+      <ul>
+        <li><a href="https://www.88skins.com/www_88skins_default.html">首页</a></li>
+        <li><a href="https://www.88skins.com/case/csgo">CSGO</a></li>
+        <li><a href="https://www.88skins.com/case/dota">DOTA</a></li>
+        <li><a href="https://www.88skins.com/page/store">商城</a></li>
+        <li><a href="https://www.88skins.com/page/promotion">推广中心</a></li>
+      </ul>
+    </header>
+  </div>
+  <div class="container" style="height: 10px">
+    <div class="header">
+      <div class="menu-luck-box"></div>
+    </div>
+    <div class="content content-box content-box-home">
+      <div class="home">
+        <div class="csgo">
+          <div class="csgo-content">
+            <div class="item-title">
+              <i class="iconfont icontitle">
+              </i>
+              <span>
+							主播力荐
+						</span>
+              <i class="iconfont icontitleR">
+              </i>
+            </div>
+            <div class="item-content layout ivu-row-flex">
+              <div class="goods-item">
+                                <span class="box-name">
+								猩红狂热
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$3
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+            </div>
+            <!---->
+          </div>
+        </div>
+        <div class="dota">
+          <div class="item-title">
+            <i class="iconfont icontitle">
+            </i>
+            <span>
+						优质宝箱
+					</span>
+            <i class="iconfont icontitleR">
+            </i>
+          </div>
+          <div class="item-content layout ivu-row-flex">
+            <div class="goods-item">
+                            <span class="box-name">
+							初出茅庐
+						</span>
+              <div class="item-btn">
+							<span class="span-1">
+								$1
+							</span>
+                <span class="span-2">
+								立即开箱
+							</span>
+              </div>
+            </div>
+            <div class="goods-item">
+                            <span class="box-name">
+							好大一块肉
+						</span>
+              <div class="item-btn">
+							<span class="span-1">
+								$3
+							</span>
+                <span class="span-2">
+								立即开箱
+							</span>
+              </div>
+            </div>
+            <div class="goods-item">
+                            <span class="box-name">
+							鱼塘遨游
+						</span>
+              <div class="item-btn">
+							<span class="span-1">
+								$6
+							</span>
+                <span class="span-2">
+								立即开箱
+							</span>
+              </div>
+            </div>
+            <div class="goods-item">
+                            <span class="box-name">
+							小芳
+						</span>
+              <div class="item-btn">
+							<span class="span-1">
+								$10
+							</span>
+                <span class="span-2">
+								立即开箱
+							</span>
+              </div>
+            </div>
+            <div class="goods-item">
+                            <span class="box-name">
+							平滑至宝箱
+						</span>
+              <div class="item-btn">
+							<span class="span-1">
+								$20
+							</span>
+                <span class="span-2">
+								立即开箱
+							</span>
+              </div>
+            </div>
+          </div>
+          <!---->
+        </div>
+        <div class="csgo">
+          <div class="csgo-content">
+            <div class="item-title">
+              <i class="iconfont icontitle">
+              </i>
+              <span>
+							普通箱子
+						</span>
+              <i class="iconfont icontitleR">
+              </i>
+            </div>
+            <div class="item-content layout ivu-row-flex">
+              <div class="goods-item">
+                                <span class="box-name">
+								A1高闪来一个
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$3.3
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                                <span class="box-name">
+								我的青春回来了
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$9
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                                <span class="box-name">
+								故乡的樱花
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$11
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                                <span class="box-name">
+								DMM
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$19
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+              <div class="goods-item">
+                                <span class="box-name">
+								好！
+							</span>
+                <div class="item-btn">
+								<span class="span-1">
+									$30
+								</span>
+                  <span class="span-2">
+									立即开箱
+								</span>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="get-more">
+              <p>
+                查看更多
+              </p>
+              <i class="iconfont iconsanjiaoxiabiaozhengfangxing">
+              </i>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <div class="layout">
+            <div class="web-info">
+              <div class="web-info-box">
+                <div class="web-text-box">
+                  <p class="wi-num num-font">
+                    1678937
+                  </p>
+                  <p class="wi-name">
+                    已开箱
+                  </p>
+                </div>
+              </div>
+              <div class="web-info-box">
+                <div class="web-text-box">
+                  <p class="wi-num num-font">
+                    129827
+                  </p>
+                  <p class="wi-name">
+                    商城兑换数
+                  </p>
+                </div>
+              </div>
+              <div class="web-info-box">
+                <div class="web-text-box">
+                  <p class="wi-num num-font">
+                    26969
+                  </p>
+                  <p class="wi-name">
+                    用户数
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.88skins.com/docList/1">文章列表</a>
+    <div class="footer">
+      <div class="footer-box layout m-padding">
+        <div class="footer-left">
+				<span class="foot-logo">
+				</span>
+          <span class="foot-rights">
+					©2020 88skins.cn.all rights reserved.88skins is operated by Hong Kong
+					Wang Defa Network Technology Co.,Ltd.,a company registered in Hong Kong,China.The
+					registered address is:1502-A,Yixi Commercial Building,253-261 Hennessy
+					Road,Wanchai,Hong Kong,registration number:2696860.
+				</span>
+        </div>
+        <div class="footer-right">
+          <p class="footer-link">
+					<span class="text-hover">
+						关于我们
+					</span>
+            <span>
+						/
+					</span>
+            <span class="text-hover">
+						常见问题
+					</span>
+            <span>
+						/
+					</span>
+            <span class="text-hover">
+						使用条款
+					</span>
+            <span>
+						/
+					</span>
+            <span class="text-hover">
+						隐私政策
+					</span>
+          </p>
+          <div class="footer-imgs">
+					<span class="f-g2a">
+					</span>
+            <span class="f-wx">
+					</span>
+            <span class="f-zfb">
+					</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-kf my-center">
+      <div class="float-btn-tip ivu-tooltip">
+        <div class="ivu-tooltip-rel">
+          <i class="iconfont iconbangzhu">
+          </i>
+        </div>
+        <div class="ivu-tooltip-popper ivu-tooltip-dark"
+             style="display: none; position: absolute; will-change: top, left; top: 23px; left: 0px;"
+             x-placement="left">
+          <div class="ivu-tooltip-content">
+            <div class="ivu-tooltip-arrow">
+            </div>
+            <div class="ivu-tooltip-inner">
+              帮助中心
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-kf anim">
+      <div class="float-btn-tip ivu-tooltip">
+        <div class="ivu-tooltip-rel">
+          <i class="iconfont iconkefu">
+          </i>
+        </div>
+        <div class="ivu-tooltip-popper ivu-tooltip-dark"
+             style="display: none; position: absolute; will-change: top, left; top: 23px; left: 0px;"
+             x-placement="left">
+          <div class="ivu-tooltip-content">
+            <div class="ivu-tooltip-arrow">
+            </div>
+            <div class="ivu-tooltip-inner">
+              <div>
+                <p>
+                  爸爸，如果您有任何问题，请告诉我们
+                </p>
+                <p>
+                  我们提供24小时服务
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kf-modal">
+      <p class="kf-m-tit">
+        88hash交流群
+      </p>
+      <div class="kf-m-qq">
+        <div class="kf-m-qq-txt">
+          <p>
+            88hash问题交流群
+          </p>
+          <p>
+            1079924648
+          </p>
+        </div>
+        <a target="_blank" href="https://jq.qq.com/?_wv=1027&amp;k=55tj67s">
+          <i class="iconfont iconjiantou">
+          </i>
+        </a>
+      </div>
+      <div class="kf-m-qq">
+        <div class="kf-m-qq-txt">
+          <p>
+            客服QQ
+          </p>
+          <p>
+            1010980415
+          </p>
+        </div>
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1010980415&amp;site=qq&amp;menu=yes">
+          <i class="iconfont iconjiantou">
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- built files will be auto injected -->
+<script type="text/javascript" src="https://www.88skins.com/js/axios.min.js" crossorigin="anonymous"></script>
+<img class="custom-btn war-hover" src="https://www.88skins.com/img/custome.png" onclick="qimoChatClick();" alt="" >
+<script type='text/javascript'>
+  let userInfo = JSON.parse(localStorage.getItem('userinfo'));
+  var qimoClientId = {
+    userId: userInfo.id + '',
+    nickName: userInfo.name ? userInfo.name + ':' + userInfo.id : '游客'
+  }; // 自定义用户的唯一id,由英文字母,数字,下划线组成
+</script>
+<script type='text/javascript'
+        src='https://ykf-webchat.7moor.com/javascripts/7moorInit.js?accessId=ff35c430-b351-11ed-aa09-cdc3c89dbb44&autoShow=false&language=ZHCN'
+        async='async'>
+</script>
+<script>
+  // 客服系统
+  let Time = null
+  Time = setInterval(() => {
+    if (window.qimoChatLoaded) {
+      clearInterval(Time)
+      document.querySelectorAll('.custom-btn')[0].style.display = 'block'
+    }
+  });
+</script>
+<!--<script type="text/javascript" src="/js/vue-router.min.js" crossorigin="anonymous"></script>-->
+<script>
+  window.mobileUtil = (function (win, doc) {
+    var UA = navigator.userAgent,
+
+     isAndroid = /android|adr/gi.test(UA),
+
+     isIos = /iphone|ipod|ipad/gi.test(UA) && !isAndroid, // 据说某些国产机的UA会同时包含 android iphone 字符
+
+     isMobile = isAndroid || isIos; // 粗略的判断
+
+    return {
+      isAndroid: isAndroid,
+
+      isIos: isIos,
+
+      isMobile: isMobile,
+
+      isNewsApp: /NewsApp\/[\d\.]+/gi.test(UA),
+
+      isWeixin: /MicroMessenger/gi.test(UA),
+
+      isQQ: /QQ\/\d/gi.test(UA),
+
+      isYixin: /YiXin/gi.test(UA),
+
+      isWeibo: /Weibo/gi.test(UA),
+
+      isTXWeibo: /T(?:X|encent)MicroBlog/gi.test(UA),
+
+      tapEvent: isMobile ? 'tap' : 'click',
+
+      /**
+
+       * 缩放页面
+
+       */
+
+      fixScreen: function () {
+        var metaEl = doc.querySelector('meta[name="viewport"]'),
+
+         metaCtt = metaEl ? metaEl.content : '',
+
+         matchScale = metaCtt.match(/initial\-scale=([\d\.]+)/),
+
+         matchWidth = metaCtt.match(/width=([^,\s]+)/);
+
+        if (!metaEl) { // REM
+
+          var docEl = doc.documentElement,
+
+           maxwidth = docEl.dataset.mw || 750, // 每 dpr 最大页面宽度
+
+           dpr = isIos ? Math.min(win.devicePixelRatio, 3) : 1,
+
+           scale = 1 / dpr,
+
+           tid;
+
+          docEl.removeAttribute('data-mw');
+
+          docEl.dataset.dpr = dpr;
+
+          metaEl = doc.createElement('meta');
+
+          metaEl.name = 'viewport';
+
+          metaEl.content = fillScale(scale);
+
+          docEl.firstElementChild.appendChild(metaEl);
+
+          var refreshRem = function () {
+            var width = docEl.getBoundingClientRect().width;
+
+            if (width / dpr > maxwidth) {
+              width = maxwidth * dpr;
+
+            }
+
+            var rem = width / 16;
+
+            docEl.style.fontSize = rem + 'px';
+
+          };
+
+          win.addEventListener('resize', function () {
+            clearTimeout(tid);
+
+            tid = setTimeout(refreshRem, 300);
+
+          }, false);
+
+          win.addEventListener('pageshow', function (e) {
+            if (e.persisted) {
+              clearTimeout(tid);
+
+              tid = setTimeout(refreshRem, 300);
+
+            }
+
+          }, false);
+
+          refreshRem();
+
+        } else if (isMobile && !matchScale && (matchWidth && matchWidth[1] != 'device-width')) { // 定宽
+
+          var width = parseInt(matchWidth[1]),
+
+           iw = win.innerWidth || width,
+
+           ow = win.outerWidth || iw,
+
+           sw = win.screen.width || iw,
+
+           saw = win.screen.availWidth || iw,
+
+           ih = win.innerHeight || width,
+
+           oh = win.outerHeight || ih,
+
+           ish = win.screen.height || ih,
+
+           sah = win.screen.availHeight || ih,
+
+           w = Math.min(iw, ow, sw, saw, ih, oh, ish, sah),
+
+           scale = w / width;
+
+          if (scale < 1) {
+            metaEl.content = metaCtt + ',' + fillScale(scale);
+
+          }
+
+        }
+
+        function fillScale(scale) {
+          return 'initial-scale=' + scale + ',maximum-scale=' + scale + ',minimum-scale=' + scale + ',user-scalable=no';
+
+        }
+
+      },
+
+      /**
+
+       * 转href参数成键值对
+
+       * @param href {string} 指定的href，默认为当前页href
+
+       * @returns {object} 键值对
+
+       */
+
+      getSearch: function (href) {
+        href = href || win.location.search;
+
+        var data = {}, reg = new RegExp("([^?=&]+)(=([^&]*))?", "g");
+        href && href.replace(reg, function ($0, $1, $2, $3) {
+          data[$1] = $3;
+        });
+        return data;
+
+      }
+
+    };
+
+  })(window, document);
+  // 默认直接适配页面
+  mobileUtil.fixScreen();
+  // mobileUtil.getSearch('/page/festival')
+  window.__lc = window.__lc || {}
+  window.__lc.license = 13059528
+</script>
+<script>
+  if (window.location.hostname.indexOf('skins') > 0) {
+    (function () {
+      try {
+        var Device = {
+          isIphone: function () {
+            return /(iPhone|iPod)/i.test(navigator.userAgent);
+          }, isAndroid: function () {
+            return /(Android)/i.test(navigator.userAgent);
+          }, isMobile: function () {
+            var documentHeader = document.head || document.getElementsByTagName("head")[0];
+            var metaList = documentHeader.getElementsByTagName('meta');
+            var isWap = false;
+            for (var i = 0; i < metaList.length; i++) {
+              if (metaList[i].name == 'viewport' && (metaList[i].content.indexOf('initial-scale=1') != -1 || metaList[i].content.indexOf('width=device-width') != -1)) {
+                isWap = true;
+              }
+            }
+            return isWap && (this.isIphone() || this.isAndroid());
+          }
+        };
+        var trustedHtml = '<div id="trusted_container"';
+        var trustedHeight = 88;
+        var trustedControlBtnHeight = 0;
+        trustedHtml += 'style="width: 100%;height:' + trustedHeight + 'px;';
+        trustedHtml += 'position:fixed;';
+        trustedHtml += 'left: 0;top: 0;z-index: -1; overflow:hidden">';
+        trustedHtml += '<div id="cert_main" style="overflow:hidden;display: none; width:100%; max-width:1920px;height:88px;position:relative"><img src="https://xymedia.qixincha.com/labels/src/cert_main_bg.png" style="width:100%;height:88px;"><div style="width:340px; height: 38px;position:absolute;top:5px;right: 1px"><a style="cursor: pointer;" target="_blank" class="hover_img" href="https://v.yunaq.com/certificate?domain=www.88skins.com&from=label&code=90020"><img src="https://xymedia.qixincha.com/labels/src/cert_view.png" style="width:84px;height:18px;margin-bottom: 10px"></a><a style="cursor: pointer;" target="_blank" href="https://v.yunaq.com/certificate?domain=www.88skins.com&from=label&code=90020"><img src="https://aqyzmedia.yunaq.com/labels/label_sm_90020.png" style="height:38px;margin-left: 30px"></a></div></div></div>';
+        if (!Device.isMobile()) {
+          var trustedPcControlBtnRight = 0;
+          trustedHtml += '<div style="';
+          trustedHtml += 'position:fixed;';
+          trustedHtml += 'top: 0;right: ' + trustedPcControlBtnRight + 'px;z-index: -1;">';
+          trustedHtml += '<img id="cert_hide_img" onclick="hideTrustedFrame(this);" style="width:40px;height:80px;display: none;" src="https://xymedia.qixincha.com/labels/src/cert_fold_long.png">';
+          trustedHtml += '<img id="cert_show_img" onclick="showTrustedFrame(this);" style="display: none;width:40px;height:40px;display: none;" src="https://xymedia.qixincha.com/labels/src/cert_fold_short.png"></div>';
+          var trustedSuperContainer = document.createElement('div');
+          trustedSuperContainer.style.width = "100%";
+          trustedSuperContainer.style.fontSize = "14px";
+          trustedSuperContainer.innerHTML = trustedHtml;
+          var checkBodyHandler = 0;
+          var addToHandler = function () {
+            if (document.body && document.body.childNodes.length >= 1) {
+              window.clearInterval(checkBodyHandler);
+              document.body.insertBefore(trustedSuperContainer, document.body.childNodes[0]);
+              document.getElementById("cert_main").onload = function () {
+                trustedSuperContainer.style.display = "";
+              };
+              // window.hideTrustedFrame = function (image) {
+              //     image.style.display = 'none';
+              //     document.getElementById('cert_show_img').style.display = '';
+              //     document.getElementById('trusted_container').style.display = 'none';
+              // };
+              // window.showTrustedFrame = function (image) {
+              //     image.style.display = 'none';
+              //     document.getElementById('cert_hide_img').style.display = '';
+              //     document.getElementById('trusted_container').style.display = '';
+              // };
+              // window.setTimeout(function () {
+              //     hideTrustedFrame(document.getElementById('cert_hide_img'));
+              // }, 3000);
+            }
+          };
+          if (document.body && document.body.childNodes.length >= 1) {
+            addToHandler();
+          } else {
+            checkBodyHandler = window.setInterval(addToHandler, 100);
+          }
+        } else {
+          trustedHtml = '<div></div>';
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    })();
+  }
+</script>
+<h1 style="display: none">csgo csgo开箱 csgo饰品交易 csgo开箱网站 csgo开箱网 csgo免费开箱 csgo皮肤交易 csgo皮肤交易平台</h1>
+<script type="text/javascript" src="https://www.88skins.com/js/chunk-vendors.8d6d92b9.js" crossorigin="anonymous"></script><script type="text/javascript" src="https://www.88skins.com/js/index.60b2d5c8.js" crossorigin="anonymous"></script></body>
+</html>
